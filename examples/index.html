@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<style>
+		.container {
+			margin-top: 50px;
+			margin: auto;
+			width: 400;
+			height: 600;
+		}
+
+		.content {
+			width: 400;
+			height: 600;
+			border: none;
+		}
+	</style>
+
+	<script>
+		window.addEventListener("message", receiveMessage, false);
+
+		function receiveMessage(event) {
+			document.querySelector('.content').remove();
+			setTimeout(() => { alert(event.data); }, 1000);
+		}
+
+		function makeAvatar() {
+			var iframe = document.createElement('iframe');
+			iframe.src = 'https://readyplayer.me/';
+			iframe.className = 'content';
+			document.querySelector('.container').appendChild(iframe);
+		}
+	</script>
+</head>
+
+<body>
+	<input type="button" value="Start" onClick="makeAvatar()" />
+	<div class="container"></div>
+</body>
+
+</html>
