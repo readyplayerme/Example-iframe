@@ -26,9 +26,9 @@
 
 		function makeAvatar() {
 			var iframe = document.createElement('iframe');
-			iframe.src = 'https://readyplayer.me/';
+			iframe.src = 'https://readyplayer.me';
 			iframe.className = 'content';
-			iframe.allow = "camera *";
+			iframe.allow = "camera *; microphone";
 			document.querySelector('.container').appendChild(iframe);
 		}
 	</script>
