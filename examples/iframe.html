@@ -14,8 +14,8 @@
 			height: 600;
 			border: none;
 		}
-		
-		body{
+
+		body {
 			background-color: gray;
 		}
 	</style>
@@ -29,11 +29,22 @@
 		}
 
 		function makeAvatar() {
-			var iframe = document.createElement('iframe');
-			iframe.src = 'https://readyplayer.me';
-			iframe.className = 'content';
-			iframe.allow = "camera *; microphone *";
-			document.querySelector('.container').appendChild(iframe);
+			let iframe = document.getElementById('iframe')
+
+			if (iframe) {
+				iframe.id = "iframe"
+				iframe.src = 'https://wondavr.readyplayer.me/';
+				iframe.className = 'content';
+				iframe.allow = "camera *; microphone *";
+			}
+			else {
+				iframe = document.createElement('iframe');
+				iframe.id = "iframe"
+				iframe.src = 'https://wondavr.readyplayer.me/';
+				iframe.className = 'content';
+				iframe.allow = "camera *; microphone *";
+				document.querySelector('.container').appendChild(iframe);
+			}
 		}
 	</script>
 </head>
