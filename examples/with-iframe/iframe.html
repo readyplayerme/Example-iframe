@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style>
+      .container {
+        margin-top: 50px;
+        margin: auto;
+        width: 1280px;
+        height: 720px;
+      }
+
+      .content {
+        width: 1280px;
+        height: 720px;
+        border: none;
+      }
+
+      body {
+        background-color: rgb(243, 243, 243);
+      }
+    </style>
+
+    <script>
+      window.addEventListener('message', receiveMessage, false)
+
+      function receiveMessage(event) {
+        document.querySelector('.content').remove()
+        setTimeout(() => {
+          alert(event.data)
+        }, 1000)
+      }
+
+      function makeAvatar() {
+        let iframe = document.getElementById('iframe')
+
+        if (iframe) {
+          iframe.id = 'iframe'
+          iframe.src = 'https://vr.readyplayer.me/' // Change this to your custom subdomain
+          iframe.className = 'content'
+          iframe.allow = 'camera *; microphone *'
+        } else {
+          iframe = document.createElement('iframe')
+          iframe.id = 'iframe'
+          iframe.src = 'https://vr.readyplayer.me/' // Change this to your custom subdomain
+          iframe.className = 'content'
+          iframe.allow = 'camera *; microphone *'
+          document.querySelector('.container').appendChild(iframe)
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Open Ready Player Me" onClick="makeAvatar()" />
+    <div class="container"></div>
+  </body>
+</html>
