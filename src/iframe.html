@@ -31,20 +31,14 @@
 
       function makeAvatar() {
         let iframe = document.getElementById('iframe')
-
-        if (iframe) {
-          iframe.id = 'iframe'
-          iframe.src = 'https://readyplayer.me/avatar' // Change this to your custom subdomain
-          iframe.className = 'content'
-          iframe.allow = 'camera *; microphone *'
-        } else {
-          iframe = document.createElement('iframe')
-          iframe.id = 'iframe'
-          iframe.src = 'https://readyplayer.me/avatar' // Change this to your custom subdomain
-          iframe.className = 'content'
-          iframe.allow = 'camera *; microphone *'
+        if (!iframe) {
+        	iframe = document.createElement('iframe')
           document.querySelector('.container').appendChild(iframe)
         }
+        iframe.id = 'iframe'
+        iframe.src = 'https://readyplayer.me/avatar' // Change this to your custom subdomain
+        iframe.className = 'content'
+        iframe.allow = 'camera *; microphone *'
       }
     </script>
   </head>
