@@ -22,6 +22,6 @@ Get in touch with the Ready Player Me community over at our [Discord](https://di
 
 ### Becoming a partner
 
-Ready Player Me is already used in over [100+ apps and games](https://readyplayer.me/partners).
+Ready Player Me is already used in over [300+ apps and games](https://readyplayer.me/partners).
 
-Want to add Ready Player Me avatars to your own app or game? Apply [here](https://airtable.com/shrfrzyPrKDgdBrRX) or let us know at [info@wolf3d.io](mailto:info@wolf3d.io).
+Want to add Ready Player Me avatars to your own app or game? Apply [here](http://bit.ly/RPMBecomeAPartner) or let us know at [info@wolf3d.io](mailto:info@wolf3d.io).
