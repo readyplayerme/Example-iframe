@@ -2,49 +2,66 @@
   <head>
     <style>
       .container {
-        margin-top: 50px;
+        margin-top: 100px;
         margin: auto;
         width: 1280px;
         height: 900px;
       }
 
       .content {
+        margin-top: 10px;
         width: 1280px;
         height: 900px;
         border: none;
       }
 
+      #avatarUrl {
+        margin-top: 10px;
+      }
+
       body {
+        padding: 40;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         background-color: rgb(243, 243, 243);
       }
     </style>
 
     <script>
-      window.addEventListener('message', receiveMessage, false)
+      // Change this to your custom subdomain
+      const iframeUrl = "https://demo.readyplayer.me/"
+
+      window.addEventListener("message", receiveMessage, false)
 
       function receiveMessage(event) {
-        document.querySelector('.content').remove()
         setTimeout(() => {
-          alert(event.data)
-        }, 1000)
+          // Get URL to avatar
+          if (iframeUrl.includes(event.origin)) {
+            console.log(`Avatar URL: ${event.data}`)
+            document.querySelector(
+              "#avatarUrl"
+            ).innerHTML = `Avatar URL: ${event.data}`
+          }
+        }, 1000);
       }
 
       function makeAvatar() {
-        let iframe = document.getElementById('iframe')
+        let iframe = document.getElementById("iframe")
         if (!iframe) {
-        	iframe = document.createElement('iframe')
-          document.querySelector('.container').appendChild(iframe)
+          iframe = document.createElement("iframe")
+          document.querySelector(".container").appendChild(iframe)
         }
-        iframe.id = 'iframe'
-        iframe.src = 'https://readyplayer.me/avatar' // Change this to your custom subdomain
-        iframe.className = 'content'
-        iframe.allow = 'camera *; microphone *'
+        iframe.id = "iframe"
+        iframe.src = iframeUrl
+        iframe.className = "content"
+        iframe.allow = "camera *; microphone *"
       }
     </script>
   </head>
 
   <body>
     <input type="button" value="Open Ready Player Me" onClick="makeAvatar()" />
+    <div id="avatarUrl">Avatar URL:</div>
     <div class="container"></div>
   </body>
 </html>
