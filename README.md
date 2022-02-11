@@ -4,7 +4,7 @@ This example showcases embedding Ready Player Me avatar creator as an `iframe` t
 
 More details can be found at [web integration guides](https://docs.readyplayer.me/integration-guides/web).
 
-[![Ready Player Me - example-iframe](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/readyplayerme-example-iframe-3pomy?initialpath=/src/iframe.html)
+[![Ready Player Me - example-iframe](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/readyplayerme/Example-iFrame?initialpath=/src/iframe.html)
 
 ---
 
