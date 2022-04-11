@@ -1,3 +1,6 @@
+/**
+ * Ready Player Me avatar iFrame embed
+ */
 
 // Get 'ReadyPlayerMe' accessability layer from DOM
 var accElementString = "[data-acc-text='ReadyPlayerMe']";
