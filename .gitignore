@@ -6,4 +6,4 @@
 .env.production.local
 
 # export folder
-app
+build
