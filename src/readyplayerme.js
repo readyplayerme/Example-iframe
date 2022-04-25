@@ -1,9 +1,9 @@
-/**
- * Ready Player Me avatar iFrame embed
- */
+// Ready Player Me avatar iFrame embed
 
-// Get 'ReadyPlayerMe' accessability layer from DOM
-var accElementString = "[data-acc-text='ReadyPlayerMe']";
+var accText = 'ReadyPlayerMe';
+
+// Get accessability layer from DOM
+var accElementString = "[data-acc-text='" + accText + "']";
 var accElement = document.querySelector(accElementString);
 
 // Prepare ReadyPlayerMe parent element

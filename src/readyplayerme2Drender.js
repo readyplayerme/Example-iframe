@@ -58,7 +58,7 @@ function render()
 
             console.log('Image URL: ', imgUrl);
             var filename = imgUrl.substring(imgUrl.lastIndexOf('/') + 1)
-            document.getElementById("renderDiv").innerHTML = '<a download=' + filename + ' href="' + imgUrl + '"><img src="' + imgUrl + '" width="800" height="800"></a>';;
+            document.getElementById("renderDiv").innerHTML = '<a download=' + filename + ' href="' + imgUrl + '" target="_blank"><img src="' + imgUrl + '" width="800" height="800"></a>';;
       }
 }
 
