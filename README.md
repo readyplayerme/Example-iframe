@@ -10,7 +10,7 @@ More details can be found at [web integration guides](https://docs.readyplayer.m
 
 ## About Ready Player Me
 
-[Ready Player Me](https://readyplayer.me/developers) is a cross-app avatar platform for the metaverse used by 1,000+ companies.
+[Ready Player Me](https://readyplayer.me/developers) is a cross-app avatar platform for the metaverse used by 3,000+ developers.
 
 ### Getting Started
 
@@ -18,8 +18,8 @@ More details can be found at [web integration guides](https://docs.readyplayer.m
 
 ### Add Ready Player Me avatars to your app or game
 
-Do you want to add Ready Player Me avatars to your own app or game? [Learn how to become a Partner](https://docs.readyplayer.me/for-partners/become-a-partner).
+Want to add Ready Player Me avatars to your own app or game? [Apply here](http://readyplayer.me/become-a-partner).
 
 ### Community
 
-Get in touch with the Ready Player Me community over at our [Discord](https://discord.gg/readyplayerme).
+Join the Ready Player Me [Discord community](https://discord.gg/readyplayerme).
