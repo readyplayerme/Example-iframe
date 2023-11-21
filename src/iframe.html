@@ -33,8 +33,7 @@
   <body>
     <h2>Ready Player Me iframe example</h2>
     <ul>
-      <li>Click "Open Ready Player Me" button.</li>
-      <li>Create an avatar and hit the "Done" button when you're finished customizing your avatar.</li>
+      <li>Create an avatar and hit the "Next" button when you're finished customizing your avatar.</li>
       <li>This parent page will receive the url to the avatar when it is created.</li>
       <li>URL will be displayed, and Ready Player Me window will be closed.</li>
     </ul>
@@ -43,7 +42,6 @@
       subdomain.
     </p>
 
-    <input type="button" value="Open Ready Player Me" onClick="displayIframe()" />
     <p id="avatarUrl">Avatar URL:</p>
 
     <iframe id="frame" class="frame" allow="camera *; microphone *; clipboard-write"></iframe>
@@ -80,7 +78,6 @@
         if (json.eventName === 'v1.avatar.exported') {
           console.log(`Avatar URL: ${json.data.url}`);
           document.getElementById('avatarUrl').innerHTML = `Avatar URL: ${json.data.url}`;
-          document.getElementById('frame').hidden = true;
         }
 
         // Get user id
@@ -95,10 +92,6 @@
         } catch (error) {
           return null;
         }
-      }
-
-      function displayIframe() {
-        document.getElementById('frame').hidden = false;
       }
     </script>
   </body>
